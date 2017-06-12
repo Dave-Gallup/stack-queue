@@ -1,20 +1,23 @@
+const Stack = require('./stack');
+
 class Queue{
 
   constructor(){
-    this._storage = [];
+    this._stack_L = new Stack();
+    this._stack_R = new Stack();
   }
 
   size(){
-    return this._storage.length;
+    
   }
 
   enqueue(el){
-    this._storage.push(el);
+
 
   }
 
   dequeue(){
-    return this._storage.shift();
+
   }
 }
 
